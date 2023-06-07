@@ -4,6 +4,7 @@
 //
 //  Created by Sinan KÜLEN on 8.05.2023.
 //
+
 import Foundation
 import UIKit
 
@@ -146,8 +147,8 @@ public final class ToolTipView: UIView, ToolTipProtocol {
               let safeAreaBottomHeight = overView.window?.safeAreaInsets.bottom,
               let screenHeight = overView.window?.frame.height else { return }
 
-        let overViewYPoint = overView.frame.origin.y
         let overViewRect = overView.viewFrameInWindow(overView)
+        let overViewYPoint = overViewRect.origin.y
         let tooltipSpacerConstant = ToolTipManager.shared.config.tooltipSpacerConstant
 
         if (overViewYPoint - labelHeight - tooltipSpacerConstant - safeAreaTopHeight) > 100 {
@@ -179,7 +180,7 @@ public final class ToolTipView: UIView, ToolTipProtocol {
                 return (
                     CGRect(
                         x: (viewRect.width / 2) + viewRect.origin.x - (triangleSize.width / 2),
-                        y: viewRect.origin.y + viewRect.height + (triangleSize.height / 2) + toolTipViewPadding,
+                        y: viewRect.origin.y + viewRect.height + toolTipViewPadding,
                         width: triangleSize.width,
                         height: triangleSize.height
                     ),
