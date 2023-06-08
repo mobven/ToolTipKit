@@ -5,20 +5,43 @@ Enhance the user experience by using a tooltip kit.
 ## Gifs
 
 <p align="center">
-  <img alt="iphone14promax" width="200" height="400" src="Docs/Screenshots/iphone14promax.gif">
-  <img alt="iphone13mini" width="200" height="400" src="Docs/Screenshots/iphone13mini.gif">
-  <img alt="iphone3se" width="200" height="400" src="Docs/Screenshots/iphone3se.gif">
+  <img alt="iphone14promax" width="200" height="400" src="Docs/Gifs/iphone14promax.gif">
+  <img alt="iphone13mini" width="200" height="400" src="Docs/Gifs/iphone13mini.gif">
+  <img alt="iphone3se" width="200" height="400" src="Docs/Gifs/iphone3se.gif">
 </p>
 
+<div align="center">
+  <span width="248" height="517">
+    <img alt="iphone14promax" width="248" height="517" src="Docs/Gifs/iphone14promax.gif">
+    </span>
+    <span width="248" height="517">
+    <img alt="iphone13mini" width="248" height="517" src="Docs/Gifs/iphone13mini.gif">
+    </span>
+    <span width="296" height="517">
+    <img alt="iphone3se" width="296" height="517" src="Docs/Gifs/iphone3se.gif">
+   </span>
+</div>
+
+<div align="center">
+  <span width="248" height="22">
+    <img alt="iPhone13text" width="248" height="22" src="Docs/Texts/iPhone13text">
+    </span>
+    <span width="248" height="22">
+    <img alt="iPhone14text" width="248" height="22" src="Docs/Texts/iPhone14text">
+    </span>
+    <span width="296" height="22">
+    <img alt="iPhoneSEtext" width="296" height="22" src="Docs/Texts/iPhoneSEtext">
+   </span>
+</div>
 
 ## Screenshots
 
 <p align="center">
-    <img alt="iphone14Pro1" width="200" height="400" src="Docs/Screenshots/iphone14pro1.png">
-    <img alt="iphone14Pro2" width="200" height="400" src="Docs/Screenshots/iphone14pro2.png">
-    <img alt="iphone14Pro3" width="200" height="400" src="Docs/Screenshots/iphone14pro3.png">
-    <img alt="iphone14Pro4" width="200" height="400" src="Docs/Screenshots/iphone14pro4.png">
-    <img alt="iphone14Pro5" width="200" height="400" src="Docs/Screenshots/iphone14pro5.png">
+    <img alt="iphone14Pro1" width="299" height="650" src="Docs/Screenshots/iphone14pro1.png">
+    <img alt="iphone14Pro2" width="299" height="650" src="Docs/Screenshots/iphone14pro2.png">
+    <img alt="iphone14Pro3" width="299" height="650" src="Docs/Screenshots/iphone14pro3.png">
+    <img alt="iphone14Pro4" width="299" height="650" src="Docs/Screenshots/iphone14pro4.png">
+    <img alt="iphone14Pro5" width="299" height="650" src="Docs/Screenshots/iphone14pro5.png">
 </p>
 
 
@@ -66,24 +89,6 @@ toolTips.presentFirst()
 #### Customization
 
 You can easly customize the tooltip with editing `Configuration` properties.
-
-```swift
-public protocol ToolTipConfiguration {
-    var textFont: UIFont { get set }
-    var textColor: UIColor { get set }
-    var isShowView: Bool { get set }
-    var toolTipBacgroundColor: UIColor { get set }
-    var toolTipCornerRadius: CGFloat { get set }
-    var toolTipViewPadding: CGFloat { get set }
-    var triangleSize: CGSize { get set }
-    var toolTipLabelEdgeInsets: UIEdgeInsets { get set }
-    var toolTipLeadingPadding: CGFloat { get set }
-    var toolTipTrailingPadding: CGFloat { get set }
-    var tooltipSpacerConstant: CGFloat { get set }
-    var letterSpacingText: CGFloat { get set }
-    var lineHeigtText: CGFloat { get set }
-}
-```
 
 
 | Property                 | Type           | Description                                                       |
