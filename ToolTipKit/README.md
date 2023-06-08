@@ -17,15 +17,15 @@ Enhance the user experience by using a tooltip kit.
 </div>
 
 <div align="center">
-  <span width="248" height="22">
-    <img alt="iPhone13text" width="248" height="22" src="Docs/Texts/iPhone13text.png">
-    </span>
-    <span width="248" height="22">
-    <img alt="iPhone14text" width="248" height="22" src="Docs/Texts/iPhone14text.png">
-    </span>
-    <span width="296" height="22">
-    <img alt="iPhoneSEtext" width="296" height="22" src="Docs/Texts/iPhoneSEtext.png">
-   </span>
+<span width="248" height="22">
+<img alt="iPhone14text" width="248" height="22" src="Docs/Texts/iPhone14text.png">
+</span>
+<span width="248" height="22">
+<img alt="iPhone13text" width="248" height="22" src="Docs/Texts/iPhone13text.png">
+</span>
+<span width="296" height="22">
+<img alt="iPhoneSEtext" width="248" height="22" src="Docs/Texts/iPhoneSEtext.png">
+</span>
 </div>
 
 ## Screenshots
