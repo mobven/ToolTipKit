@@ -4,12 +4,6 @@ Enhance the user experience by using a tooltip kit.
 
 ## Gifs
 
-<p align="center">
-  <img alt="iphone14promax" width="200" height="400" src="Docs/Gifs/iphone14promax.gif">
-  <img alt="iphone13mini" width="200" height="400" src="Docs/Gifs/iphone13mini.gif">
-  <img alt="iphone3se" width="200" height="400" src="Docs/Gifs/iphone3se.gif">
-</p>
-
 <div align="center">
   <span width="248" height="517">
     <img alt="iphone14promax" width="248" height="517" src="Docs/Gifs/iphone14promax.gif">
@@ -24,13 +18,13 @@ Enhance the user experience by using a tooltip kit.
 
 <div align="center">
   <span width="248" height="22">
-    <img alt="iPhone13text" width="248" height="22" src="Docs/Texts/iPhone13text">
+    <img alt="iPhone13text" width="248" height="22" src="Docs/Texts/iPhone13text.png">
     </span>
     <span width="248" height="22">
-    <img alt="iPhone14text" width="248" height="22" src="Docs/Texts/iPhone14text">
+    <img alt="iPhone14text" width="248" height="22" src="Docs/Texts/iPhone14text.png">
     </span>
     <span width="296" height="22">
-    <img alt="iPhoneSEtext" width="296" height="22" src="Docs/Texts/iPhoneSEtext">
+    <img alt="iPhoneSEtext" width="296" height="22" src="Docs/Texts/iPhoneSEtext.png">
    </span>
 </div>
 
