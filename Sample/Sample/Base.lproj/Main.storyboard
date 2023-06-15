@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge" translatesAutoresizingMaskIntoConstraints="NO" id="h3g-cc-jd1" userLabel="TopView">
+                                <rect key="frame" x="152.66666666666666" y="188" width="88" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="4PR-0h-tcC"/>
+                                    <constraint firstAttribute="height" constant="101" id="Exm-G5-MFM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge" translatesAutoresizingMaskIntoConstraints="NO" id="4pq-tk-nQG" userLabel="BottomView">
+                                <rect key="frame" x="152.66666666666666" y="539" width="88" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="vMo-ML-QQt"/>
+                                    <constraint firstAttribute="width" constant="88" id="yfR-fI-0kQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u99-yG-cD2" userLabel="BottomButton">
+                                <rect key="frame" x="171.66666666666666" y="439" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RU3-fl-vFX"/>
+                                    <constraint firstAttribute="width" constant="50" id="uMR-t5-5AW"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="info.circle" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMQ-l2-OBb" userLabel="TopButton">
+                                <rect key="frame" x="171.66666666666666" y="88" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="n3x-96-gaR"/>
+                                    <constraint firstAttribute="height" constant="50" id="uOV-dV-2L8"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="info.circle" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4pq-tk-nQG" firstAttribute="top" secondItem="u99-yG-cD2" secondAttribute="bottom" constant="50" id="Exr-Uw-zLY"/>
+                            <constraint firstItem="aMQ-l2-OBb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Feq-Av-6As"/>
+                            <constraint firstItem="h3g-cc-jd1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GyD-pD-kDA"/>
+                            <constraint firstItem="h3g-cc-jd1" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-200" id="Hby-b9-mXq"/>
+                            <constraint firstItem="u99-yG-cD2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JK1-Wf-fxW"/>
+                            <constraint firstItem="h3g-cc-jd1" firstAttribute="top" secondItem="aMQ-l2-OBb" secondAttribute="bottom" constant="50" id="bPU-La-xEQ"/>
+                            <constraint firstItem="h3g-cc-jd1" firstAttribute="bottom" secondItem="4pq-tk-nQG" secondAttribute="top" constant="-250" id="hHz-L5-NVc"/>
+                            <constraint firstItem="4pq-tk-nQG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pQ3-VC-OWF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomButton" destination="u99-yG-cD2" id="aJI-Me-Fvd"/>
+                        <outlet property="bottomView" destination="4pq-tk-nQG" id="WgF-31-GX5"/>
+                        <outlet property="topButton" destination="aMQ-l2-OBb" id="AOj-7L-he2"/>
+                        <outlet property="topView" destination="h3g-cc-jd1" id="oLd-hR-uLt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="badge" width="88" height="101"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
