@@ -192,7 +192,7 @@ public final class ToolTipView: UIView, ToolTipProtocol {
 extension ToolTipView: UIGestureRecognizerDelegate {
     public func gestureRecognizer(_: UIGestureRecognizer, shouldReceive _: UITouch) -> Bool {
         removeFromSuperview()
-        delegate?.onTap()
+        delegate?.toolTipDidTap(self)
         return false
     }
 }
