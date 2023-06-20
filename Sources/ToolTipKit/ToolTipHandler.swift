@@ -13,7 +13,7 @@ public protocol ToolTipGestureDelegate: AnyObject {
 }
 
 /// An array of tooltips to be managed by the `ToolTipHandler`.
-public class ToolTipHandler: ToolTipGestureDelegate {
+public final class ToolTipHandler: ToolTipGestureDelegate {
     public var toolTips: [ToolTipProtocol]
 
     /// Initializes a new instance of `ToolTipHandler` with the specified tooltips.

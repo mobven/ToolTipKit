@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-class ToolTipLabel: UILabel {
+final class ToolTipLabel: UILabel {
     public var leftInset: CGFloat = .zero
     public var rightInset: CGFloat = .zero
     public var topInset: CGFloat = .zero

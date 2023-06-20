@@ -10,6 +10,7 @@ import UIKit
 
 /// ToolTipView to display tips on top view.
 public final class ToolTipView: UIView, ToolTipProtocol {
+    /// Delegates `ToolTipKit` tip changes.
     public var delegate: ToolTipGestureDelegate?
     public var overView: UIView
     public var text: NSAttributedString
@@ -26,7 +27,7 @@ public final class ToolTipView: UIView, ToolTipProtocol {
     /// Initalizes `ToolTipView` with parameters
     /// - Parameters:
     ///   - overView: Root view to display `ToolTipView`.
-    ///   - attributedText: Text to be displayed on tool tip view.
+    ///   - text: Text to be displayed on tool tip view.
     public init(overView: UIView, text: NSAttributedString) {
         self.overView = overView
         self.text = text
@@ -41,13 +42,7 @@ public final class ToolTipView: UIView, ToolTipProtocol {
         let topBottomToolTipLabelInset = config.toolTipLabelEdgeInsets.bottom + config.toolTipLabelEdgeInsets.top
         let labelWidth = (overView.window?.frame.width ?? .zero - leadingTrailingToolTipPadding) +
             topBottomToolTipLabelInset
-        toolTipDirectionFor(
-            overView: overView,
-            and: toolTipLabel
-                .textHeight(
-                    withWidth: labelWidth
-                )
-        )
+        toolTipDirectionFor(overView: overView, and: text.height(withWidth: labelWidth))
         setup()
     }
 

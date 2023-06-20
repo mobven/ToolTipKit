@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class TriangleView: UIView {
+final class TriangleView: UIView {
     public var triangleColor: UIColor = .white {
         didSet {
             self.setNeedsDisplay()
