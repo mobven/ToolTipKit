@@ -125,7 +125,8 @@ or you can create your own `Config`
 ```
 
 ## What's next
-- [] SwiftUI representable code example. 
+- [] SwiftUI representable code example.
+- [] Backward compatibility for Apple's [TipKit](https://developer.apple.com/videos/play/wwdc2023/10229/).
   
 ---
 Developed with 🖤 at [Mobven](https://mobven.com/)
