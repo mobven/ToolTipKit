@@ -5,8 +5,8 @@
 //  Created by Sinan KÜLEN on 8.06.2023.
 //
 
-@testable import ToolTipKit
 import XCTest
+@testable import ToolTipKit
 
 final class ToolTipHandlerTest: XCTestCase {
     class MockToolTip: ToolTipProtocol {

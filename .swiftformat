@@ -1,0 +1,15 @@
+# format options
+--importgrouping testable-bottom
+--maxwidth 120
+--wraparguments before-first
+--wrapparameters before-first
+--wrapcollections before-first
+--funcattributes same-line
+--typeattributes same-line
+--varattributes same-line
+
+# file options
+--exclude Build
+
+# rules
+--disable wrapMultilineStatementBraces, unusedArguments, trailingCommas

@@ -43,7 +43,7 @@ public final class ToolTipView: UIView, ToolTipProtocol {
         setup()
     }
 
-    @available(*, unavailable) required init?(coder: NSCoder) {
+    @available(*, unavailable) required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -192,8 +192,9 @@ public final class ToolTipView: UIView, ToolTipProtocol {
 }
 
 // MARK: - UIGestureRecognizerDelegate
+
 extension ToolTipView: UIGestureRecognizerDelegate {
-    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+    public func gestureRecognizer(_: UIGestureRecognizer, shouldReceive _: UITouch) -> Bool {
         removeFromSuperview()
         delegate?.onTap()
         return false

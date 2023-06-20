@@ -21,7 +21,7 @@ extension UIView {
     /// Returns snapshot of the view after screen updates.
     var snapshot: UIImage {
         let renderer = UIGraphicsImageRenderer(size: bounds.size)
-        return renderer.image { ctx in
+        return renderer.image { _ in
             drawHierarchy(in: bounds, afterScreenUpdates: true)
         }
     }
