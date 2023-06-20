@@ -12,14 +12,22 @@ import UIKit
 public final class ToolTipView: UIView, ToolTipProtocol {
     public var delegate: ToolTipGestureDelegate?
     public var overView: UIView
-    public var text: String
+    public var text: NSAttributedString
     private var toolTipDirection: ToolTipDirection = .up(.zero)
 
     /// Initalizes `ToolTipView` with parameters
     /// - Parameters:
     ///   - overView: Root view to display `ToolTipView`.
     ///   - text: Text to be displayed on tool tip view.
-    public init(overView: UIView, text: String) {
+    public convenience init(overView: UIView, text: String) {
+        self.init(overView: overView, text: Self.customize(text: text))
+    }
+
+    /// Initalizes `ToolTipView` with parameters
+    /// - Parameters:
+    ///   - overView: Root view to display `ToolTipView`.
+    ///   - attributedText: Text to be displayed on tool tip view.
+    public init(overView: UIView, text: NSAttributedString) {
         self.overView = overView
         self.text = text
         super.init(frame: UIScreen.main.bounds)
@@ -53,29 +61,17 @@ public final class ToolTipView: UIView, ToolTipProtocol {
         addGestureRecognizer(gestureRecognizer)
     }
 
-    private func customize(text: String) -> NSAttributedString {
-        let attributedString = NSMutableAttributedString(string: text)
-        let style = NSMutableParagraphStyle()
-        style.minimumLineHeight = ToolTipManager.shared.config.lineHeigtText
-        style.maximumLineHeight = ToolTipManager.shared.config.lineHeigtText
-        attributedString.addAttribute(
-            .paragraphStyle,
-            value: style,
-            range: NSRange(location: 0, length: attributedString.length)
-        )
-        attributedString.addAttribute(
-            .kern,
-            value: ToolTipManager.shared.config.letterSpacingText,
-            range: NSRange(location: 0, length: attributedString.length)
-        )
+    private class func customize(text: String) -> NSAttributedString {
+        let attributedString = NSMutableAttributedString(string: text, attributes: [
+            .font: ToolTipManager.shared.config.textFont,
+            .foregroundColor: ToolTipManager.shared.config.textColor
+        ])
         return attributedString
     }
 
     lazy var toolTipLabel: UILabel = {
         let label = ToolTipLabel()
-        label.attributedText = customize(text: self.text)
-        label.font = ToolTipManager.shared.config.textFont
-        label.textColor = ToolTipManager.shared.config.textColor
+        label.attributedText = text
         label.textAlignment = .left
         label.backgroundColor = .white
         label.numberOfLines = 0

@@ -74,7 +74,7 @@ let toolTips =  ToolTipHandler(toolTips: [
                     ),
                     ToolTipView(
                         overView: infoView,
-                        text: "info_tooltip".localized
+                        text: NSAttributedString(string: "something".localized)
                     )
             ])
 toolTips.presentFirst()
@@ -98,8 +98,6 @@ You can easly customize the tooltip with editing `Configuration` properties.
 | `toolTipLeadingPadding`  | `CGFloat`      | The leading padding of the tooltip view.                                           |
 | `toolTipTrailingPadding` | `CGFloat`      | The trailing padding of the tooltip view.                                          |
 | `tooltipSpacerConstant`  | `CGFloat`      | The constant used for the safe area between tooltip space.                         |
-| `letterSpacingText`      | `CGFloat`      | The letter spacing of the tooltip text.                                            |
-| `lineHeigtText`          | `CGFloat`      | The line height of the tooltip text.                                               |
 
 ##### Example 
 You can customize properties like this,
@@ -121,9 +119,7 @@ or you can create your own `Config`
         triangleSize: CGSize(width: 10.0, height: 12.0),
         toolTipLabelEdgeInsets: UIEdgeInsets(top: 6.0, left: 8.0, bottom: 7.0, right: 8.0),
         toolTipLeadingPadding: 15,
-        toolTipTrailingPadding: 26,
-        letterSpacingText: .zero,
-        lineHeigtText: 17
+        toolTipTrailingPadding: 26
     )
     ToolTipManager.shared.config = toolTipConfig
 ```

@@ -21,8 +21,6 @@ public protocol ToolTipConfiguration {
     var toolTipLeadingPadding: CGFloat { get set }
     var toolTipTrailingPadding: CGFloat { get set }
     var tooltipSpacerConstant: CGFloat { get set }
-    var letterSpacingText: CGFloat { get set }
-    var lineHeigtText: CGFloat { get set }
 }
 
 /// `ToolTipConfig` is a struct that implements the `ToolTipConfiguration` protocol, providing default values for
@@ -50,10 +48,6 @@ public struct ToolTipConfig: ToolTipConfiguration {
     public var toolTipTrailingPadding: CGFloat
     /// The constant used for the safe area between tooltip space.
     public var tooltipSpacerConstant: CGFloat
-    /// The letter spacing of the tooltip text.
-    public var letterSpacingText: CGFloat
-    /// The line height of the tooltip text.
-    public var lineHeigtText: CGFloat
 
     public init(
         textFont: UIFont = UIFont.systemFont(ofSize: 14),
@@ -66,9 +60,7 @@ public struct ToolTipConfig: ToolTipConfiguration {
         toolTipLabelEdgeInsets: UIEdgeInsets = UIEdgeInsets(top: 12.0, left: 12.0, bottom: 12.0, right: 12.0),
         toolTipLeadingPadding: CGFloat = 16.0,
         toolTipTrailingPadding: CGFloat = 16.0,
-        tooltipSpacerConstant: CGFloat = 150.0,
-        letterSpacingText: CGFloat = 0.25,
-        lineHeigtText: CGFloat = 20.0
+        tooltipSpacerConstant: CGFloat = 150.0
     ) {
         self.textFont = textFont
         self.textColor = textColor
@@ -81,7 +73,5 @@ public struct ToolTipConfig: ToolTipConfiguration {
         self.toolTipLeadingPadding = toolTipLeadingPadding
         self.toolTipTrailingPadding = toolTipTrailingPadding
         self.tooltipSpacerConstant = tooltipSpacerConstant
-        self.letterSpacingText = letterSpacingText
-        self.lineHeigtText = lineHeigtText
     }
 }
