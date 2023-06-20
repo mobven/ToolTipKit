@@ -40,7 +40,7 @@ Enhance the user experience by using a tooltip kit.
 
 
 ## Requirements
-* iOS 12+
+* iOS 11+
 * Xcode 14+
 * Swift 5.8+
 
@@ -49,7 +49,7 @@ Enhance the user experience by using a tooltip kit.
 Currently ToolTipKit is only avaliable via SPM. You can also add manually to your project.
 
 ### SPM
-If you have already Swift package set up, add CountryPicker as a dependency to your dependencies in your `Package.swift` file.
+If you have already Swift package set up, add `ToolTipKit` as a dependency to your dependencies in your `Package.swift` file.
 ```swift
 dependencies: [
     .package(url: "https://github.com/mobven/ToolTipKit.git")
