@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 
     private func configureToolTip() {
         var toolTipConfig = ToolTipManager.shared.config
-        toolTipConfig.isShowView = true
+        toolTipConfig.shouldHighlightView = true
         ToolTipManager.shared.config = toolTipConfig
     }
 

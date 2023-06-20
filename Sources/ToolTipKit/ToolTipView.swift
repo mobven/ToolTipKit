@@ -114,7 +114,7 @@ public final class ToolTipView: UIView, ToolTipProtocol {
         overView.window?.addSubview(self)
         setupViews()
         setupLayouts()
-        if ToolTipManager.shared.config.isShowView {
+        if ToolTipManager.shared.config.shouldHighlightView {
             showOverView()
         }
     }

@@ -85,28 +85,28 @@ toolTips.presentFirst()
 You can easly customize the tooltip with editing `Configuration` properties.
 
 
-| Property                 | Type           | Description                                                       |
-| ------------------------ | -------------- | ----------------------------------------------------------------- |
-| `textFont`               | `UIFont`       | The font used for the tooltip text.                               |
-| `textColor`              | `UIColor`      | The color of the tooltip text.                                    |
-| `isShowView`             | `Bool`         | A Boolean value that determines whether to show the tooltip view. |
-| `toolTipBacgroundColor`  | `UIColor`      | The background color of the tooltip view.                         |
-| `toolTipCornerRadius`    | `CGFloat`      | The corner radius of the tooltip view.                            |
-| `toolTipViewPadding`     | `CGFloat`      | The padding around the tooltip view.                              |
-| `triangleSize`           | `CGSize`       | The size of the triangle on the tooltip view.                     |
-| `toolTipLabelEdgeInsets` | `UIEdgeInsets` | The edge insets of the tooltip label.                             |
-| `toolTipLeadingPadding`  | `CGFloat`      | The leading padding of the tooltip view.                          |
-| `toolTipTrailingPadding` | `CGFloat`      | The trailing padding of the tooltip view.                         |
-| `tooltipSpacerConstant`  | `CGFloat`      | The constant used for the safe area between tooltip space.        |
-| `letterSpacingText`      | `CGFloat`      | The letter spacing of the tooltip text.                           |
-| `lineHeigtText`          | `CGFloat`      | The line height of the tooltip text.                              |
+| Property                 | Type           | Description                                                                        |
+| ------------------------ | -------------- | -----------------------------------------------------------------------------------|
+| `textFont`               | `UIFont`       | The font used for the tooltip text.                                                |
+| `textColor`              | `UIColor`      | The color of the tooltip text.                                                     |
+| `shouldHighlightView`    | `Bool`         | A Boolean value that determines whether to highlight the view which shows tooltip. |
+| `toolTipBacgroundColor`  | `UIColor`      | The background color of the tooltip view.                                          |
+| `toolTipCornerRadius`    | `CGFloat`      | The corner radius of the tooltip view.                                             |
+| `toolTipViewPadding`     | `CGFloat`      | The padding around the tooltip view.                                               |
+| `triangleSize`           | `CGSize`       | The size of the triangle on the tooltip view.                                      |
+| `toolTipLabelEdgeInsets` | `UIEdgeInsets` | The edge insets of the tooltip label.                                              |
+| `toolTipLeadingPadding`  | `CGFloat`      | The leading padding of the tooltip view.                                           |
+| `toolTipTrailingPadding` | `CGFloat`      | The trailing padding of the tooltip view.                                          |
+| `tooltipSpacerConstant`  | `CGFloat`      | The constant used for the safe area between tooltip space.                         |
+| `letterSpacingText`      | `CGFloat`      | The letter spacing of the tooltip text.                                            |
+| `lineHeigtText`          | `CGFloat`      | The line height of the tooltip text.                                               |
 
 ##### Example 
 You can customize properties like this,
 
 ```swift
   ToolTipManager.shared.config.textColor = .gray
-  ToolTipManager.shared.config.isShowView = true
+  ToolTipManager.shared.config.shouldHighlightView = true
 ```
 or you can create your own `Config`
 
@@ -114,7 +114,7 @@ or you can create your own `Config`
     let toolTipConfig= ToolTipConfig(
         textFont: .system,
         textColor: .black,
-        isShowView: false,
+        shouldHighlightView: false,
         toolTipBacgroundColor: UIColor.black.withAlphaComponent(0.15),
         toolTipCornerRadius: 4.0,
         toolTipViewPadding: 6.0,

@@ -12,7 +12,7 @@ import UIKit
 public protocol ToolTipConfiguration {
     var textFont: UIFont { get set }
     var textColor: UIColor { get set }
-    var isShowView: Bool { get set }
+    var shouldHighlightView: Bool { get set }
     var toolTipBacgroundColor: UIColor { get set }
     var toolTipCornerRadius: CGFloat { get set }
     var toolTipViewPadding: CGFloat { get set }
@@ -32,8 +32,8 @@ public struct ToolTipConfig: ToolTipConfiguration {
     public var textFont: UIFont
     /// The color of the tooltip text.
     public var textColor: UIColor
-    /// A Boolean value that determines whether to show the tooltip view.
-    public var isShowView: Bool
+    /// A Boolean value that determines whether to highlight the view which shows tooltip.
+    public var shouldHighlightView: Bool
     /// The background color of the tooltip view.
     public var toolTipBacgroundColor: UIColor
     /// The corner radius of the tooltip view.
@@ -58,7 +58,7 @@ public struct ToolTipConfig: ToolTipConfiguration {
     public init(
         textFont: UIFont = UIFont.systemFont(ofSize: 14),
         textColor: UIColor = .black,
-        isShowView: Bool = false,
+        shouldHighlightView: Bool = false,
         toolTipBacgroundColor: UIColor = .black.withAlphaComponent(0.7),
         toolTipCornerRadius: CGFloat = 4.0,
         toolTipViewPadding: CGFloat = 10.0,
@@ -72,7 +72,7 @@ public struct ToolTipConfig: ToolTipConfiguration {
     ) {
         self.textFont = textFont
         self.textColor = textColor
-        self.isShowView = isShowView
+        self.shouldHighlightView = shouldHighlightView
         self.toolTipBacgroundColor = toolTipBacgroundColor
         self.toolTipCornerRadius = toolTipCornerRadius
         self.toolTipViewPadding = toolTipViewPadding

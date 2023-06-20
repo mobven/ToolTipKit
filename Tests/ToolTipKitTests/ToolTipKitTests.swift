@@ -24,7 +24,7 @@ final class ToolTipKitTests: XCTestCase {
     }
 
     func testWithShowOverView() {
-        ToolTipManager.shared.config.isShowView = true
+        ToolTipManager.shared.config.shouldHighlightView = true
         sut.present()
         XCTAssertEqual(sut.subviews.count, 4)
     }
