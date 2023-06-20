@@ -11,10 +11,16 @@ import XCTest
 final class ToolTipHandlerTest: XCTestCase {
     class MockToolTip: ToolTipProtocol {
         var overView: UIView
-        var text: String
+        var text: NSAttributedString
         var delegate: ToolTipKit.ToolTipGestureDelegate?
 
         init(overView: UIView, text: String, delegate: ToolTipGestureDelegate? = nil) {
+            self.overView = overView
+            self.text = ToolTipView.customize(text: text)
+            self.delegate = delegate
+        }
+
+        init(overView: UIView, text: NSAttributedString, delegate: ToolTipGestureDelegate? = nil) {
             self.overView = overView
             self.text = text
             self.delegate = delegate
@@ -28,12 +34,12 @@ final class ToolTipHandlerTest: XCTestCase {
 
     class MockGestureDelegate: ToolTipGestureDelegate {
         var onTapCalled: Bool = false
-        func onTap() {
+        func toolTipDidTap(_ toolTip: ToolTipKit.ToolTipView) {
             onTapCalled = true
         }
     }
 
-    func testPresentFirst() {
+    func testPresent() {
         let mockToolTip1 = MockToolTip(overView: UIView(), text: "Tooltip 1")
         let mockToolTip2 = MockToolTip(overView: UIView(), text: "Tooltip 2")
         let mockToolTip3 = MockToolTip(overView: UIView(), text: "Tooltip 3")
@@ -42,9 +48,11 @@ final class ToolTipHandlerTest: XCTestCase {
         let toolTipHandler = ToolTipHandler(toolTips: mockToolTips)
 
         toolTipHandler.toolTips.forEach { $0.delegate = mockGestureDelegate }
-        toolTipHandler.presentFirst()
+        toolTipHandler.present()
         XCTAssert(mockToolTip1.presentCalled)
-        toolTipHandler.toolTips.first?.delegate?.onTap()
+        toolTipHandler.toolTips.first?.delegate?.toolTipDidTap(
+            .init(overView: mockToolTip1.overView, text: mockToolTip1.text)
+        )
         XCTAssertTrue(mockGestureDelegate.onTapCalled)
     }
 }

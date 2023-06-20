@@ -49,6 +49,6 @@ class ViewController: UIViewController {
                 text: buttonDescription
             )
         ])
-        toolTipHandler.presentFirst()
+        toolTipHandler.present()
     }
 }

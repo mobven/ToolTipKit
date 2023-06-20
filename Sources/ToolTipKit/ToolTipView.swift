@@ -61,7 +61,7 @@ public final class ToolTipView: UIView, ToolTipProtocol {
         addGestureRecognizer(gestureRecognizer)
     }
 
-    private class func customize(text: String) -> NSAttributedString {
+    class func customize(text: String) -> NSAttributedString {
         let attributedString = NSMutableAttributedString(string: text, attributes: [
             .font: ToolTipManager.shared.config.textFont,
             .foregroundColor: ToolTipManager.shared.config.textColor

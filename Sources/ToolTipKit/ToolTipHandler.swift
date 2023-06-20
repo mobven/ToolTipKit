@@ -25,21 +25,15 @@ public class ToolTipHandler: ToolTipGestureDelegate {
         }
     }
 
-    /// Presents the first tooltip in the array.
-    public func presentFirst() {
+    /// Presents the next tooltip in the array.
+    public func present() {
+        guard toolTips.count > .zero else { return }
         toolTips.first?.present()
+        toolTips.removeFirst()
     }
 
     /// Presents the next tooltip in the array after receiving a tap gesture on the screen.
     public func toolTipDidTap(_ toolTip: ToolTipView) {
-        presentNext()
-    }
-
-    /// Presents the next tooltip in the array.
-    private func presentNext() {
-        if toolTips.count > .zero {
-            toolTips.removeFirst()
-            toolTips.first?.present()
-        }
+        present()
     }
 }
