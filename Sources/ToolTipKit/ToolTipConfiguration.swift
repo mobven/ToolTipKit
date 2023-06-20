@@ -1,6 +1,6 @@
 //
 //  ToolTipConfiguration.swift
-//
+//  ToolTipKit
 //
 //  Created by Sinan KÜLEN on 9.05.2023.
 //
@@ -49,6 +49,19 @@ public struct ToolTipConfig: ToolTipConfiguration {
     /// The constant used for the safe area between tooltip space.
     public var tooltipSpacerConstant: CGFloat
 
+    /// Initializes `ToolTipKit` with specified configurations.
+    /// - Parameters:
+    ///   - textFont: The font used for the tooltip text.
+    ///   - textColor: The color of the tooltip text.
+    ///   - shouldHighlightView: A Boolean value that determines whether to highlight the view which shows tooltip.
+    ///   - toolTipBacgroundColor: The background color of the tooltip view.
+    ///   - toolTipCornerRadius: The corner radius of the tooltip view.
+    ///   - toolTipViewPadding: The padding around the tooltip view.
+    ///   - triangleSize: The size of the triangle on the tooltip view.
+    ///   - toolTipLabelEdgeInsets: The edge insets of the tooltip label.
+    ///   - toolTipLeadingPadding: The leading padding of the tooltip view.
+    ///   - toolTipTrailingPadding: The trailing padding of the tooltip view.
+    ///   - tooltipSpacerConstant: The constant used for the safe area between tooltip space.
     public init(
         textFont: UIFont = UIFont.systemFont(ofSize: 14),
         textColor: UIColor = .black,
