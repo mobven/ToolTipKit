@@ -129,4 +129,4 @@ or you can create your own `Config`
 - [] Backward compatibility for Apple's [TipKit](https://developer.apple.com/videos/play/wwdc2023/10229/).
   
 ---
-Developed with 🖤 at [Mobven](https://mobven.com/)
+Developed with 🖤 at [Mobven](https://mobven.com/) for [MAC+](https://apps.apple.com/tr/app/mac-online-fitness-deneyimi/id1573778936/)
