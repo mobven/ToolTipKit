@@ -85,19 +85,20 @@ toolTips.presentFirst()
 You can easly customize the tooltip with editing `Configuration` properties.
 
 
-| Property                 | Type           | Description                                                                        |
-| ------------------------ | -------------- | -----------------------------------------------------------------------------------|
-| `textFont`               | `UIFont`       | The font used for the tooltip text.                                                |
-| `textColor`              | `UIColor`      | The color of the tooltip text.                                                     |
-| `shouldHighlightView`    | `Bool`         | A Boolean value that determines whether to highlight the view which shows tooltip. |
-| `toolTipBacgroundColor`  | `UIColor`      | The background color of the tooltip view.                                          |
-| `toolTipCornerRadius`    | `CGFloat`      | The corner radius of the tooltip view.                                             |
-| `toolTipViewPadding`     | `CGFloat`      | The padding around the tooltip view.                                               |
-| `triangleSize`           | `CGSize`       | The size of the triangle on the tooltip view.                                      |
-| `toolTipLabelEdgeInsets` | `UIEdgeInsets` | The edge insets of the tooltip label.                                              |
-| `toolTipLeadingPadding`  | `CGFloat`      | The leading padding of the tooltip view.                                           |
-| `toolTipTrailingPadding` | `CGFloat`      | The trailing padding of the tooltip view.                                          |
-| `tooltipSpacerConstant`  | `CGFloat`      | The constant used for the safe area between tooltip space.                         |
+| Property                     | Type           | Description                                                                        |
+| ---------------------------- | -------------- | -----------------------------------------------------------------------------------|
+| `textFont`                   | `UIFont`       | The font used for the tooltip text.                                                |
+| `textColor`                  | `UIColor`      | The color of the tooltip text.                                                     |
+| `shouldHighlightView`        | `Bool`         | A Boolean value that determines whether to highlight the view which shows tooltip. |
+| `toolTipBacgroundColor`      | `UIColor`      | The background color of the tooltip view.                                          |
+| `toolTipCornerRadius`        | `CGFloat`      | The corner radius of the tooltip view.                                             |
+| `toolTipViewPadding`         | `CGFloat`      | The padding around the tooltip view.                                               |
+| `triangleSize`               | `CGSize`       | The size of the triangle on the tooltip view.                                      |
+| `toolTipLabelEdgeInsets`     | `UIEdgeInsets` | The edge insets of the tooltip label.                                              |
+| `toolTipLeadingPadding`      | `CGFloat`      | The leading padding of the tooltip view.                                           |
+| `toolTipTrailingPadding`     | `CGFloat`      | The trailing padding of the tooltip view.                                          |
+| `tooltipSpacerConstant`      | `CGFloat`      | The constant used for the safe area between tooltip space.                         |
+| `toolTipTextBacgroundColor`  | `UIColor`      | The background color of the tooltip text.                                          |
 
 ##### Example 
 You can customize properties like this,
@@ -119,7 +120,8 @@ or you can create your own `Config`
         triangleSize: CGSize(width: 10.0, height: 12.0),
         toolTipLabelEdgeInsets: UIEdgeInsets(top: 6.0, left: 8.0, bottom: 7.0, right: 8.0),
         toolTipLeadingPadding: 15,
-        toolTipTrailingPadding: 26
+        toolTipTrailingPadding: 26,
+        toolTipTextBacgroundColor: .white
     )
     ToolTipManager.shared.config = toolTipConfig
 ```

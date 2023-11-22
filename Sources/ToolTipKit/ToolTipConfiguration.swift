@@ -48,6 +48,8 @@ public struct ToolTipConfig: ToolTipConfiguration {
     public var toolTipTrailingPadding: CGFloat
     /// The constant used for the safe area between tooltip space.
     public var tooltipSpacerConstant: CGFloat
+    /// The background color of the tooltip text.
+    public var toolTipTextBacgroundColor: UIColor
 
     /// Initializes `ToolTipKit` with specified configurations.
     /// - Parameters:
@@ -62,6 +64,7 @@ public struct ToolTipConfig: ToolTipConfiguration {
     ///   - toolTipLeadingPadding: The leading padding of the tooltip view.
     ///   - toolTipTrailingPadding: The trailing padding of the tooltip view.
     ///   - tooltipSpacerConstant: The constant used for the safe area between tooltip space.
+    ///   - toolTipTextBacgroundColor: The background color of the tooltip text.
     public init(
         textFont: UIFont = UIFont.systemFont(ofSize: 14),
         textColor: UIColor = .black,
@@ -73,7 +76,8 @@ public struct ToolTipConfig: ToolTipConfiguration {
         toolTipLabelEdgeInsets: UIEdgeInsets = UIEdgeInsets(top: 12.0, left: 12.0, bottom: 12.0, right: 12.0),
         toolTipLeadingPadding: CGFloat = 16.0,
         toolTipTrailingPadding: CGFloat = 16.0,
-        tooltipSpacerConstant: CGFloat = 150.0
+        tooltipSpacerConstant: CGFloat = 150.0,
+        toolTipTextBacgroundColor: UIColor = .white
     ) {
         self.textFont = textFont
         self.textColor = textColor
@@ -86,5 +90,6 @@ public struct ToolTipConfig: ToolTipConfiguration {
         self.toolTipLeadingPadding = toolTipLeadingPadding
         self.toolTipTrailingPadding = toolTipTrailingPadding
         self.tooltipSpacerConstant = tooltipSpacerConstant
+        self.toolTipTextBacgroundColor = toolTipTextBacgroundColor
     }
 }

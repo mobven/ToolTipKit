@@ -66,16 +66,17 @@ public final class ToolTipView: UIView, ToolTipProtocol {
 
     lazy var toolTipLabel: UILabel = {
         let label = ToolTipLabel()
+        let config = ToolTipManager.shared.config
         label.attributedText = text
         label.textAlignment = .left
-        label.backgroundColor = .white
+        label.backgroundColor = config.toolTipTextBacgroundColor
         label.numberOfLines = 0
-        label.layer.cornerRadius = ToolTipManager.shared.config.toolTipCornerRadius
-        label.layer.masksToBounds = ToolTipManager.shared.config.toolTipCornerRadius > .zero
-        label.topInset = ToolTipManager.shared.config.toolTipLabelEdgeInsets.top
-        label.leftInset = ToolTipManager.shared.config.toolTipLabelEdgeInsets.left
-        label.rightInset = ToolTipManager.shared.config.toolTipLabelEdgeInsets.right
-        label.bottomInset = ToolTipManager.shared.config.toolTipLabelEdgeInsets.bottom
+        label.layer.cornerRadius = config.toolTipCornerRadius
+        label.layer.masksToBounds = config.toolTipCornerRadius > .zero
+        label.topInset = config.toolTipLabelEdgeInsets.top
+        label.leftInset = config.toolTipLabelEdgeInsets.left
+        label.rightInset = config.toolTipLabelEdgeInsets.right
+        label.bottomInset = config.toolTipLabelEdgeInsets.bottom
         return label
     }()
 
@@ -90,7 +91,7 @@ public final class ToolTipView: UIView, ToolTipProtocol {
         view.transform = toolTipDirection.triangleFrame.isUp ? view.transform
             .rotated(by: .pi) : view
             .transform
-        view.triangleColor = UIColor.white
+        view.triangleColor = ToolTipManager.shared.config.toolTipTextBacgroundColor
         return view
     }()
 
