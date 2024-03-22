@@ -2,6 +2,8 @@
 
 Enhance the user experience by using a tooltip kit.
 
+[ToolTipKit Docs](https://mobven.github.io/ToolTipKit/) describe how to integrate the framework.
+
 ## Gifs
 
 <div align="center">
