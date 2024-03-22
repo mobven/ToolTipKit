@@ -1,0 +1,16 @@
+---
+path:            '/Users/sinankulen/Downloads/Xcode 3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/17.4/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule'
+dependencies:
+  - mtime:           1708393659000000000
+    path:            '/Users/sinankulen/Downloads/Xcode 3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/17.4/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule'
+    size:            15384
+  - mtime:           1707057420000000000
+    path:            'usr/lib/swift/Swift.swiftmodule/x86_64-apple-ios-simulator.swiftinterface'
+    size:            2097217
+    sdk_relative:    true
+  - mtime:           1707057603000000000
+    path:            'usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-simulator.swiftinterface'
+    size:            589
+    sdk_relative:    true
+version:         1
+...

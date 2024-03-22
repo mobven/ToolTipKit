@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>11</integer>
+	<key>logs</key>
+	<dict>
+		<key>C31BC8E5-5608-45B1-89DE-7C889FCD04EF</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C31BC8E5-5608-45B1-89DE-7C889FCD04EF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>ToopTipKit</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>ToolTipKit</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace ToopTipKit with scheme ToolTipKit</string>
+			<key>timeStartedRecording</key>
+			<real>732804268.24632704</real>
+			<key>timeStoppedRecording</key>
+			<real>732804276.805305</real>
+			<key>title</key>
+			<string>Building workspace ToopTipKit with scheme ToolTipKit</string>
+			<key>uniqueIdentifier</key>
+			<string>C31BC8E5-5608-45B1-89DE-7C889FCD04EF</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
