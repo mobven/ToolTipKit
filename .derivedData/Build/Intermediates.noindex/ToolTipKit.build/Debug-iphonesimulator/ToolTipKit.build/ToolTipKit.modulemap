@@ -1,0 +1,4 @@
+module ToolTipKit {
+header "ToolTipKit-Swift.h"
+export *
+}

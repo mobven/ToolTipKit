@@ -1,0 +1,98 @@
+{
+  "" : {
+    "diagnostics" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipKit-master.dia",
+    "emit-module-dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipKit-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipKit-master-emit-module.dia",
+    "swift-dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipKit-master.swiftdeps"
+  },
+  "/Users/sinankulen/ToopTipKit/Sources/ToolTipKit/Extensions/NSAttributedString+Extension.swift" : {
+    "const-values" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/NSAttributedString+Extension.swiftconstvalues",
+    "dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/NSAttributedString+Extension.d",
+    "diagnostics" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/NSAttributedString+Extension.dia",
+    "index-unit-output-path" : "/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/NSAttributedString+Extension.o",
+    "llvm-bc" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/NSAttributedString+Extension.bc",
+    "object" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/NSAttributedString+Extension.o",
+    "swift-dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/NSAttributedString+Extension.swiftdeps",
+    "swiftmodule" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/NSAttributedString+Extension~partial.swiftmodule"
+  },
+  "/Users/sinankulen/ToopTipKit/Sources/ToolTipKit/Extensions/UIView+Extension.swift" : {
+    "const-values" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/UIView+Extension.swiftconstvalues",
+    "dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/UIView+Extension.d",
+    "diagnostics" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/UIView+Extension.dia",
+    "index-unit-output-path" : "/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/UIView+Extension.o",
+    "llvm-bc" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/UIView+Extension.bc",
+    "object" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/UIView+Extension.o",
+    "swift-dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/UIView+Extension.swiftdeps",
+    "swiftmodule" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/UIView+Extension~partial.swiftmodule"
+  },
+  "/Users/sinankulen/ToopTipKit/Sources/ToolTipKit/ToolTipConfiguration.swift" : {
+    "const-values" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipConfiguration.swiftconstvalues",
+    "dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipConfiguration.d",
+    "diagnostics" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipConfiguration.dia",
+    "index-unit-output-path" : "/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipConfiguration.o",
+    "llvm-bc" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipConfiguration.bc",
+    "object" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipConfiguration.o",
+    "swift-dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipConfiguration.swiftdeps",
+    "swiftmodule" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipConfiguration~partial.swiftmodule"
+  },
+  "/Users/sinankulen/ToopTipKit/Sources/ToolTipKit/ToolTipHandler.swift" : {
+    "const-values" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipHandler.swiftconstvalues",
+    "dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipHandler.d",
+    "diagnostics" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipHandler.dia",
+    "index-unit-output-path" : "/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipHandler.o",
+    "llvm-bc" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipHandler.bc",
+    "object" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipHandler.o",
+    "swift-dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipHandler.swiftdeps",
+    "swiftmodule" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipHandler~partial.swiftmodule"
+  },
+  "/Users/sinankulen/ToopTipKit/Sources/ToolTipKit/ToolTipManager.swift" : {
+    "const-values" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipManager.swiftconstvalues",
+    "dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipManager.d",
+    "diagnostics" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipManager.dia",
+    "index-unit-output-path" : "/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipManager.o",
+    "llvm-bc" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipManager.bc",
+    "object" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipManager.o",
+    "swift-dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipManager.swiftdeps",
+    "swiftmodule" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipManager~partial.swiftmodule"
+  },
+  "/Users/sinankulen/ToopTipKit/Sources/ToolTipKit/ToolTipProtocol.swift" : {
+    "const-values" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipProtocol.swiftconstvalues",
+    "dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipProtocol.d",
+    "diagnostics" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipProtocol.dia",
+    "index-unit-output-path" : "/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipProtocol.o",
+    "llvm-bc" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipProtocol.bc",
+    "object" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipProtocol.o",
+    "swift-dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipProtocol.swiftdeps",
+    "swiftmodule" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipProtocol~partial.swiftmodule"
+  },
+  "/Users/sinankulen/ToopTipKit/Sources/ToolTipKit/ToolTipView.swift" : {
+    "const-values" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipView.swiftconstvalues",
+    "dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipView.d",
+    "diagnostics" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipView.dia",
+    "index-unit-output-path" : "/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipView.o",
+    "llvm-bc" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipView.bc",
+    "object" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipView.o",
+    "swift-dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipView.swiftdeps",
+    "swiftmodule" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipView~partial.swiftmodule"
+  },
+  "/Users/sinankulen/ToopTipKit/Sources/ToolTipKit/Views/ToolTipLabel.swift" : {
+    "const-values" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipLabel.swiftconstvalues",
+    "dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipLabel.d",
+    "diagnostics" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipLabel.dia",
+    "index-unit-output-path" : "/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipLabel.o",
+    "llvm-bc" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipLabel.bc",
+    "object" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipLabel.o",
+    "swift-dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipLabel.swiftdeps",
+    "swiftmodule" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/ToolTipLabel~partial.swiftmodule"
+  },
+  "/Users/sinankulen/ToopTipKit/Sources/ToolTipKit/Views/TriangleView.swift" : {
+    "const-values" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/TriangleView.swiftconstvalues",
+    "dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/TriangleView.d",
+    "diagnostics" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/TriangleView.dia",
+    "index-unit-output-path" : "/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/TriangleView.o",
+    "llvm-bc" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/TriangleView.bc",
+    "object" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/TriangleView.o",
+    "swift-dependencies" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/TriangleView.swiftdeps",
+    "swiftmodule" : "/Users/sinankulen/ToopTipKit/.derivedData/Build/Intermediates.noindex/ToolTipKit.build/Debug-iphonesimulator/ToolTipKit.build/Objects-normal/arm64/TriangleView~partial.swiftmodule"
+  }
+}
