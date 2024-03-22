@@ -7,7 +7,6 @@ build/
 DerivedData/
 FeedbackReporterIOS/DrivedData
 .derivedData/
-.docs/
 *.ipa
 *.app.dSYM.zip
 
