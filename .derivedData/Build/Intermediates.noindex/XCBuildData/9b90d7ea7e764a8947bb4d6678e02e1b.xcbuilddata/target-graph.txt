@@ -1,4 +1,0 @@
-Target dependency graph (2 targets)
-Target 'ToolTipKit' in project 'ToolTipKit'
-➜ Explicit dependency on target 'ToolTipKit' in project 'ToolTipKit'
-Target 'ToolTipKit' in project 'ToolTipKit' (no dependencies)
