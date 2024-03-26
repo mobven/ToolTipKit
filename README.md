@@ -8,13 +8,13 @@ Enhance the user experience by using a tooltip kit.
 
 <div align="center">
   <span width="248" height="517">
-    <img alt="iphone14promax" width="248" height="517" src="Sources/ToolTipKit/Documentation/Resources/iphone14promax.gif">
+    <img alt="iphone14promax" width="248" height="517" src="Sources/ToolTipKit/Documentation.docc/Resources/iphone14promax.gif">
     </span>
     <span width="248" height="517">
-    <img alt="iphone13mini" width="248" height="517" src="Sources/ToolTipKit/Documentation/Resources/iphone13mini.gif">
+    <img alt="iphone13mini" width="248" height="517" src="Sources/ToolTipKit/Documentation.docc/Resources/iphone13mini.gif">
     </span>
     <span width="296" height="517">
-    <img alt="iphone3se" width="296" height="517" src="Sources/ToolTipKit/Documentation/Resources/iphone3se.gif">
+    <img alt="iphone3se" width="296" height="517" src="Sources/ToolTipKit/Documentation.docc/Resources/iphone3se.gif">
    </span>
 </div>
 
