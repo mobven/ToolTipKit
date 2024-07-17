@@ -12,17 +12,28 @@ final class ToolTipHandlerTest: XCTestCase {
     class MockToolTip: ToolTipProtocol {
         var overView: UIView
         var text: NSAttributedString
+        var toolTipImage: UIImage?
         var delegate: ToolTipKit.ToolTipGestureDelegate?
 
-        init(overView: UIView, text: String, delegate: ToolTipGestureDelegate? = nil) {
+        init(
+            overView: UIView,
+            text: String,
+            image: UIImage? = nil,
+            delegate: ToolTipGestureDelegate? = nil) {
             self.overView = overView
             self.text = ToolTipView.customize(text: text)
+            self.toolTipImage = image
             self.delegate = delegate
         }
 
-        init(overView: UIView, text: NSAttributedString, delegate: ToolTipGestureDelegate? = nil) {
+        init(
+            overView: UIView,
+            text: NSAttributedString,
+            image: UIImage? = nil, delegate:
+            ToolTipGestureDelegate? = nil) {
             self.overView = overView
             self.text = text
+            self.toolTipImage = image
             self.delegate = delegate
         }
 
@@ -43,7 +54,8 @@ final class ToolTipHandlerTest: XCTestCase {
         let mockToolTip1 = MockToolTip(overView: UIView(), text: "Tooltip 1")
         let mockToolTip2 = MockToolTip(overView: UIView(), text: "Tooltip 2")
         let mockToolTip3 = MockToolTip(overView: UIView(), text: "Tooltip 3")
-        let mockToolTips = [mockToolTip1, mockToolTip2, mockToolTip3]
+        let mockToolTip4 = MockToolTip(overView: UIView(), text: "Tooltip 4", image: UIImage(named: "test"))
+        let mockToolTips = [mockToolTip1, mockToolTip2, mockToolTip3, mockToolTip4]
         let mockGestureDelegate = MockGestureDelegate()
         let toolTipHandler = ToolTipHandler(toolTips: mockToolTips)
 

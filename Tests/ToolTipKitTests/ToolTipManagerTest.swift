@@ -14,6 +14,7 @@ final class ToolTipManagerTest: XCTestCase {
         toolTipConfig.shouldHighlightView = true
         toolTipConfig.textColor = .gray
         toolTipConfig.toolTipBacgroundColor = .darkGray
+        toolTipConfig.toolTipImageHeight = 200.0
         ToolTipManager.shared.config = toolTipConfig
         XCTAssertEqual(toolTipConfig.shouldHighlightView, ToolTipManager.shared.config.shouldHighlightView)
         XCTAssertEqual(toolTipConfig.textColor, ToolTipManager.shared.config.textColor)

@@ -12,6 +12,7 @@ import UIKit
 public protocol ToolTipProtocol: AnyObject {
     var overView: UIView { get }
     var text: NSAttributedString { get }
+    var toolTipImage: UIImage? { get }
     var delegate: ToolTipGestureDelegate? { get set }
     /// Presents `ToolTipKit` over `overView`.
     func present()
