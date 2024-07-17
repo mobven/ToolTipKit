@@ -23,6 +23,7 @@ public protocol ToolTipConfiguration {
     var tooltipSpacerConstant: CGFloat { get set }
     var toolTipLabelAlignment: NSTextAlignment { get set }
     var toolTipImageHeight: CGFloat { get set }
+    var toolTipImageViewBackgroundColor: UIColor { get set }
 }
 
 /// `ToolTipConfig` is a struct that implements the `ToolTipConfiguration` protocol, providing default values for
@@ -56,6 +57,8 @@ public struct ToolTipConfig: ToolTipConfiguration {
     public var toolTipLabelAlignment: NSTextAlignment
     /// The height constraint value of the tooltip image.
     public var toolTipImageHeight: CGFloat
+    /// The background color of the image view.
+    public var toolTipImageViewBackgroundColor: UIColor
     
     /// Initializes `ToolTipKit` with specified configurations.
     /// - Parameters:
@@ -86,7 +89,8 @@ public struct ToolTipConfig: ToolTipConfiguration {
         tooltipSpacerConstant: CGFloat = 150.0,
         toolTipTextBacgroundColor: UIColor = .white,
         toolTipLabelAlignment: NSTextAlignment = .left,
-        toolTipImageHeight: CGFloat = 0.0
+        toolTipImageHeight: CGFloat = 0.0,
+        toolTipImageViewBackgroundColor: UIColor = .white
     ) {
         self.textFont = textFont
         self.textColor = textColor
@@ -102,5 +106,6 @@ public struct ToolTipConfig: ToolTipConfiguration {
         self.toolTipTextBacgroundColor = toolTipTextBacgroundColor
         self.toolTipLabelAlignment = toolTipLabelAlignment
         self.toolTipImageHeight = toolTipImageHeight
+        self.toolTipImageViewBackgroundColor = toolTipImageViewBackgroundColor
     }
 }
