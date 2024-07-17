@@ -50,7 +50,11 @@ public struct ToolTipConfig: ToolTipConfiguration {
     public var tooltipSpacerConstant: CGFloat
     /// The background color of the tooltip text.
     public var toolTipTextBacgroundColor: UIColor
-
+    /// The text alignment of the tooltip label.
+    public var toolTipLabelAlignment: NSTextAlignment
+    /// The height constraint value of the tooltip image.
+    public var toolTipImageHeight: CGFloat
+    
     /// Initializes `ToolTipKit` with specified configurations.
     /// - Parameters:
     ///   - textFont: The font used for the tooltip text.
@@ -65,6 +69,7 @@ public struct ToolTipConfig: ToolTipConfiguration {
     ///   - toolTipTrailingPadding: The trailing padding of the tooltip view.
     ///   - tooltipSpacerConstant: The constant used for the safe area between tooltip space.
     ///   - toolTipTextBacgroundColor: The background color of the tooltip text.
+    ///   - toolTipLabelAlignment: The text alignment of the tooltip label.
     public init(
         textFont: UIFont = UIFont.systemFont(ofSize: 14),
         textColor: UIColor = .black,
@@ -77,7 +82,9 @@ public struct ToolTipConfig: ToolTipConfiguration {
         toolTipLeadingPadding: CGFloat = 16.0,
         toolTipTrailingPadding: CGFloat = 16.0,
         tooltipSpacerConstant: CGFloat = 150.0,
-        toolTipTextBacgroundColor: UIColor = .white
+        toolTipTextBacgroundColor: UIColor = .white,
+        toolTipLabelAlignment: NSTextAlignment = .left,
+        toolTipImageHeight: CGFloat = 0.0
     ) {
         self.textFont = textFont
         self.textColor = textColor
@@ -91,5 +98,7 @@ public struct ToolTipConfig: ToolTipConfiguration {
         self.toolTipTrailingPadding = toolTipTrailingPadding
         self.tooltipSpacerConstant = tooltipSpacerConstant
         self.toolTipTextBacgroundColor = toolTipTextBacgroundColor
+        self.toolTipLabelAlignment = toolTipLabelAlignment
+        self.toolTipImageHeight = toolTipImageHeight
     }
 }
