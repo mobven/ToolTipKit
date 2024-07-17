@@ -96,7 +96,6 @@ public final class ToolTipView: UIView, ToolTipProtocol {
 
     lazy var imageContainerView: UIView = {
         let view = UIView(frame: UIScreen.main.bounds)
-        let config = ToolTipManager.shared.config
         view.layer.cornerRadius = config.toolTipCornerRadius
         view.layer.masksToBounds = config.toolTipCornerRadius > .zero
         view.backgroundColor = .white
