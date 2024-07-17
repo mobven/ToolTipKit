@@ -21,6 +21,8 @@ public protocol ToolTipConfiguration {
     var toolTipLeadingPadding: CGFloat { get set }
     var toolTipTrailingPadding: CGFloat { get set }
     var tooltipSpacerConstant: CGFloat { get set }
+    var toolTipLabelAlignment: NSTextAlignment { get set }
+    var toolTipImageHeight: CGFloat { get set }
 }
 
 /// `ToolTipConfig` is a struct that implements the `ToolTipConfiguration` protocol, providing default values for
