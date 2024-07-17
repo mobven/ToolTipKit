@@ -98,7 +98,7 @@ public final class ToolTipView: UIView, ToolTipProtocol {
         let view = UIView(frame: UIScreen.main.bounds)
         view.layer.cornerRadius = config.toolTipCornerRadius
         view.layer.masksToBounds = config.toolTipCornerRadius > .zero
-        view.backgroundColor = .white
+        view.backgroundColor = ToolTipManager.shared.config.toolTipImageViewBackgroundColor
         return view
     }()
 
