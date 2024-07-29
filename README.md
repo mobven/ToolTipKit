@@ -4,6 +4,11 @@ Enhance the user experience by using a tooltip kit.
 
 [ToolTipKit Docs](https://mobven.github.io/ToolTipKit/) describe how to integrate the framework.
 
+## Dependency Graph [draw.io](https://drive.google.com/file/d/1bNvo1xb1lsaLDpgqNKl-IqLFSppN3k3L/view?usp=sharing)
+<div align="center">
+  <img alt="ToolTipKit Dependency Graph" src="Docs/Screenshots/dependency-graph.png">
+</div>
+
 ## Gifs
 
 <div align="center">
