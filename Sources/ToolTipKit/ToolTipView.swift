@@ -17,7 +17,8 @@ public final class ToolTipView: UIView, ToolTipProtocol {
     private var toolTipDirection: ToolTipDirection = .up(.zero)
     public var toolTipImage: UIImage?
     private let config = ToolTipManager.shared.config
-
+    public var completionHandler: (() -> Void)?
+    
     /// Initalizes `ToolTipView` with parameters
     /// - Parameters:
     ///   - overView: Root view to display `ToolTipView`.
@@ -45,7 +46,8 @@ public final class ToolTipView: UIView, ToolTipProtocol {
     }
 
     /// Presents tool tip view with initialized parameters.
-    public func present() {
+    public func present(completion: (() -> Void)?) {
+        completionHandler = completion
         let config = ToolTipManager.shared.config
         let leadingTrailingToolTipPadding = config.toolTipLeadingPadding + config.toolTipTrailingPadding
         let topBottomToolTipLabelInset = config.toolTipLabelEdgeInsets.bottom + config.toolTipLabelEdgeInsets.top

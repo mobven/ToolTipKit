@@ -15,5 +15,5 @@ public protocol ToolTipProtocol: AnyObject {
     var toolTipImage: UIImage? { get }
     var delegate: ToolTipGestureDelegate? { get set }
     /// Presents `ToolTipKit` over `overView`.
-    func present()
+    func present(completion: (() -> Void)?)
 }
