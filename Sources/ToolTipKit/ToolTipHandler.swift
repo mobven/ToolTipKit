@@ -26,14 +26,17 @@ public final class ToolTipHandler: ToolTipGestureDelegate {
     }
 
     /// Presents the next tooltip in the array.
-    public func present() {
-        guard toolTips.count > .zero else { return }
-        toolTips.first?.present()
+    public func present(completion: (() -> Void)? = nil) {
+        guard toolTips.count > .zero else {
+            completion?()
+            return
+        }
+        toolTips.first?.present(completion: completion)
         toolTips.removeFirst()
     }
 
     /// Presents the next tooltip in the array after receiving a tap gesture on the screen.
     public func toolTipDidTap(_ toolTip: ToolTipView) {
-        present()
+        present(completion: toolTip.completionHandler)
     }
 }
