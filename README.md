@@ -132,10 +132,6 @@ or you can create your own `Config`
     )
     ToolTipManager.shared.config = toolTipConfig
 ```
-
-## What's next
-- [] SwiftUI representable code example.
-- [] Backward compatibility for Apple's [TipKit](https://developer.apple.com/videos/play/wwdc2023/10229/).
   
 ---
 
@@ -145,9 +141,8 @@ A simple and customizable tooltip library for SwiftUI applications. TooltipKitUI
 
 ## Features
 
-- 🎯 Easy to use modifier-based API
 - 🎨 Highly customizable appearance
-- 📱 iOS 14+ and macOS 11+ support
+- 📱 iOS 14+
 - ✨ Smooth animations
 - 🎭 Highlight effect around target views
 - 📐 Flexible arrow positioning (top/bottom)
