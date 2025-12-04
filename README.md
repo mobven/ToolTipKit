@@ -138,4 +138,179 @@ or you can create your own `Config`
 - [] Backward compatibility for Apple's [TipKit](https://developer.apple.com/videos/play/wwdc2023/10229/).
   
 ---
+
+# TooltipKitUI
+
+A simple and customizable tooltip library for SwiftUI applications. TooltipKitUI allows you to easily add beautiful tooltips to any view with extensive customization options.
+
+## Features
+
+- 🎯 Easy to use modifier-based API
+- 🎨 Highly customizable appearance
+- 📱 iOS 14+ and macOS 11+ support
+- ✨ Smooth animations
+- 🎭 Highlight effect around target views
+- 📐 Flexible arrow positioning (top/bottom)
+
+## Installation
+
+### Swift Package Manager
+
+Add TooltipKitUI to your project using Swift Package Manager:
+
+1. In Xcode, go to **File** → **Add Packages...**
+2. Enter the repository URL
+3. Select the version you want to use
+4. Add the package to your target
+
+## Quick Start
+
+### 1. Wrap your content in `TooltipContainer`
+
+```swift
+import SwiftUI
+import TooltipKitUI
+
+struct ContentView: View {
+    var body: some View {
+        TooltipContainer {
+            // Your app content here
+        }
+    }
+}
+```
+
+### 2. Add tooltip to any view
+
+```swift
+struct ContentView: View {
+    @State private var showTooltip = false
+    
+    var body: some View {
+        TooltipContainer {
+            Button("Show Tooltip") {
+                showTooltip = true
+            }
+            .tooltip(
+                isPresented: $showTooltip,
+                title: "Welcome!",
+                description: "This is a tooltip example"
+            )
+        }
+    }
+}
+```
+
+## Configuration Parameters
+
+The `.tooltip()` modifier accepts the following parameters:
+
+### Required Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `isPresented` | `Binding<Bool>` | Controls tooltip visibility |
+| `title` | `String` | Tooltip title text |
+| `description` | `String` | Tooltip description text |
+
+### Optional Parameters
+
+#### Arrow & Layout
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `arrowDirection` | `ArrowDirection` | `.top` | Arrow position (`.top` or `.bottom`) |
+| `tooltipWidth` | `CGFloat` | `350` | Width of the tooltip |
+| `spacing` | `CGFloat` | `16` | Spacing between title and description |
+| `highlightCornerRadius` | `CGFloat` | `8` | Corner radius of the highlight effect |
+
+#### Typography
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `titleFont` | `Font` | `.system(size: 12)` | Font for the title |
+| `descriptionFont` | `Font` | `.system(size: 12)` | Font for the description |
+| `titleColor` | `Color` | `.black` | Color of the title text |
+| `descriptionColor` | `Color` | `.gray` | Color of the description text |
+
+#### Padding
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `titlePadding` | `EdgeInsets` | `EdgeInsets(top: 16, leading: 16, bottom: 0, trailing: 16)` | Padding around the title |
+| `descriptionPadding` | `EdgeInsets` | `EdgeInsets(top: 0, leading: 32, bottom: 32, trailing: 32)` | Padding around the description |
+
+#### Appearance
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `backgroundColor` | `Color` | `.white` | Background color of the tooltip |
+| `shadowRadius` | `CGFloat` | `10` | Shadow radius around the tooltip |
+| `cornerRadius` | `CGFloat` | `8` | Corner radius of the tooltip |
+
+## Usage Examples
+
+### Basic Tooltip
+
+```swift
+Button("Info") {
+    showTooltip = true
+}
+.tooltip(
+    isPresented: $showTooltip,
+    title: "Information",
+    description: "This button provides additional information"
+)
+```
+
+### Customized Tooltip
+
+```swift
+Button("Custom Tooltip") {
+    showTooltip = true
+}
+.tooltip(
+    isPresented: $showTooltip,
+    title: "Custom Style",
+    description: "This tooltip has custom colors and fonts",
+    arrowDirection: .bottom,
+    titleFont: .system(size: 16, weight: .bold),
+    descriptionFont: .system(size: 14),
+    titleColor: .blue,
+    descriptionColor: .secondary,
+    tooltipWidth: 300,
+    backgroundColor: .systemBackground,
+    shadowRadius: 15
+)
+```
+
+### Tooltip with Bottom Arrow
+
+```swift
+Image(systemName: "questionmark.circle")
+    .tooltip(
+        isPresented: $showTooltip,
+        title: "Help",
+        description: "Tap anywhere to dismiss",
+        arrowDirection: .bottom
+    )
+```
+
+## Dismissal
+
+Tooltips are automatically dismissed when:
+- User taps anywhere on the screen (outside or inside the tooltip)
+- The `isPresented` binding is set to `false` programmatically
+
+## Requirements
+
+- iOS 14.0+ / macOS 11.0+
+- Swift 5.0+
+- Xcode 12.0+
+
+## License
+
+Copyright © 2025 Mobven. All rights reserved.
+
+---
 Developed with 🖤 at [Mobven](https://mobven.com/) for [MAC+](https://apps.apple.com/tr/app/mac-online-fitness-deneyimi/id1573778936/)

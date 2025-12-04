@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1989F0162EE1BA50000AF66B /* TooltipPreviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1989F0152EE1BA50000AF66B /* TooltipPreviewScreen.swift */; };
 		1B9624932A38A870005CA52B /* ToolTipKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1B9624922A38A870005CA52B /* ToolTipKit */; };
+		1B9624952A38A88000A8BD94 /* TooltipKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1B9624942A38A88000A8BD94 /* TooltipKitUI */; };
 		1BE7B8ED2A38A47B00A8BD94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE7B8EC2A38A47B00A8BD94 /* AppDelegate.swift */; };
 		1BE7B8EF2A38A47B00A8BD94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE7B8EE2A38A47B00A8BD94 /* SceneDelegate.swift */; };
 		1BE7B8F12A38A47B00A8BD94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE7B8F02A38A47B00A8BD94 /* ViewController.swift */; };
@@ -17,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1989F0152EE1BA50000AF66B /* TooltipPreviewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipPreviewScreen.swift; sourceTree = "<group>"; };
 		1BE7B8E92A38A47B00A8BD94 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE7B8EC2A38A47B00A8BD94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BE7B8EE2A38A47B00A8BD94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,12 +37,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B9624932A38A870005CA52B /* ToolTipKit in Frameworks */,
+				1B9624952A38A88000A8BD94 /* TooltipKitUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1989F0142EE1BA3A000AF66B /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				1989F0152EE1BA50000AF66B /* TooltipPreviewScreen.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		1B9624912A38A870005CA52B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +80,7 @@
 		1BE7B8EB2A38A47B00A8BD94 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				1989F0142EE1BA3A000AF66B /* SwiftUI */,
 				1BE7B8EC2A38A47B00A8BD94 /* AppDelegate.swift */,
 				1BE7B8EE2A38A47B00A8BD94 /* SceneDelegate.swift */,
 				1BE7B8F02A38A47B00A8BD94 /* ViewController.swift */,
@@ -105,6 +118,7 @@
 			name = Sample;
 			packageProductDependencies = (
 				1B9624922A38A870005CA52B /* ToolTipKit */,
+				1B9624942A38A88000A8BD94 /* TooltipKitUI */,
 			);
 			productName = Sample;
 			productReference = 1BE7B8E92A38A47B00A8BD94 /* Sample.app */;
@@ -163,6 +177,7 @@
 			files = (
 				1BE7B8F12A38A47B00A8BD94 /* ViewController.swift in Sources */,
 				1BE7B8ED2A38A47B00A8BD94 /* AppDelegate.swift in Sources */,
+				1989F0162EE1BA50000AF66B /* TooltipPreviewScreen.swift in Sources */,
 				1BE7B8EF2A38A47B00A8BD94 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +401,10 @@
 		1B9624922A38A870005CA52B /* ToolTipKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ToolTipKit;
+		};
+		1B9624942A38A88000A8BD94 /* TooltipKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TooltipKitUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
