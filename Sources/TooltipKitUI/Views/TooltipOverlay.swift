@@ -8,14 +8,44 @@
 
 import SwiftUI
 
+/// A view that positions and renders a tooltip bubble relative to a target element.
+///
+/// `TooltipOverlay` is responsible for calculating the optimal position for the tooltip bubble
+/// based on available screen space, the target element's frame, and the tooltip's configuration.
+/// It automatically determines whether to place the tooltip above or below the target, adjusts
+/// horizontal positioning to keep the tooltip within screen bounds, and calculates the arrow
+/// position to point at the target element's center.
+///
+/// The overlay handles edge cases such as insufficient space and ensures the tooltip remains
+/// fully visible and properly aligned with its target.
+///
+/// - Note: This struct is available on iOS 14.0 and later.
 @available(iOS 14.0, *)
 struct TooltipOverlay: View {
+    /// The configuration that defines the tooltip's appearance and content.
     let tooltip: TooltipConfig
+    
+    /// The frame rectangle of the target view in global coordinate space.
     let targetFrame: CGRect
+    
+    /// The size of the container view, used for bounds checking and positioning calculations.
     let containerSize: CGSize
 
+    /// The measured size of the tooltip content, used for accurate positioning.
+    ///
+    /// This state is updated when the tooltip view's geometry changes, allowing the overlay
+    /// to position the tooltip correctly relative to the target element.
     @State private var contentSize: CGSize = .zero
 
+    /// The body of the overlay view.
+    ///
+    /// This view calculates the optimal tooltip position, adjusts the configuration based on
+    /// available space, and renders the tooltip bubble with the correct arrow positioning.
+    ///
+    /// Positioning logic:
+    /// - Determines arrow direction based on available space (prefers space below if > 200pt)
+    /// - Calculates horizontal center aligned with target, with edge constraints
+    /// - Computes arrow position as a ratio of tooltip width for proper pointing
     var body: some View {
         let minX: CGFloat = 8
         let maxAvailableWidth = containerSize.width - (minX * 2)
