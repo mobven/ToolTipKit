@@ -2,7 +2,7 @@
 //  TooltipPreviewScreen.swift
 //  TooltipKitUI
 //
-//  Created by Akın Ozcan on 4.12.2025.
+//  Created by Akin Ozcan on 4.12.2025.
 //
 
 import SwiftUI
