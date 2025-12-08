@@ -9,19 +9,11 @@ let package = Package(
             name: "ToolTipKit",
             targets: ["ToolTipKit"]
         ),
-        .library(
-            name: "TooltipKitUI",
-            targets: ["TooltipKitUI"]
-        )
     ],
     dependencies: [],
     targets: [
         .target(
             name: "ToolTipKit",
-            dependencies: []
-        ),
-        .target(
-            name: "TooltipKitUI",
             dependencies: []
         ),
         .testTarget(
