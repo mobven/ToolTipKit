@@ -8,7 +8,7 @@ let package = Package(
         .library(
             name: "ToolTipKit",
             targets: ["ToolTipKit"]
-        )
+        ),
     ],
     dependencies: [],
     targets: [
