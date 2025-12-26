@@ -26,12 +26,17 @@ class ViewController: UIViewController {
         ToolTipManager.shared.config = toolTipConfig
     }
 
+    // Keep a strong reference to the handler so it doesn't get deallocated immediately
+    private var toolTipHandler: ToolTipHandler?
+
     private func showToolTip() {
         let buttonDescription =
             "Showing a tooltip on a view can be useful in providing users with additional information or descriptions related to that view."
         let viewDescription =
             "To display a tooltip on a button, you can use a tooltip text to provide additional information or instructions to the user."
-        let toolTipHandler = ToolTipHandler(toolTips: [
+        
+        // Assign to the instance property
+        self.toolTipHandler = ToolTipHandler(toolTips: [
             ToolTipView(
                 overView: topButton,
                 text: viewDescription
@@ -49,6 +54,6 @@ class ViewController: UIViewController {
                 text: buttonDescription
             )
         ])
-        toolTipHandler.present()
+        self.toolTipHandler?.present()
     }
 }
