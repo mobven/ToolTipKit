@@ -70,21 +70,28 @@ dependencies: [
 This code initializes a ToolTipHandler object with a collection of tooltips and presents the tooltips. Each tooltip is associated with a specific view (repeatView, weightView, and infoView) and displays localized text ("repeat_tooltip", "weight_tooltip", and "info_tooltip"). The ToolTipHandler provides functionality for managing and displaying tooltips in the application.
 
 ```swift
-let toolTips =  ToolTipHandler(toolTips: [
-                    ToolTipView(
-                        overView: repeatView,
-                        text: "repeat_tooltip".localized
-                    ),
-                    ToolTipView(
-                        overView: weightView,
-                        text: "weight_tooltip".localized
-                    ),
-                    ToolTipView(
-                        overView: infoView,
-                        text: NSAttributedString(string: "something".localized)
-                    )
-            ])
-toolTips.presentFirst()
+class YourViewController: UIViewController {
+    // Keep a strong reference to ToolTipHandler
+    var toolTipHandler: ToolTipHandler?
+
+    func showToolTips() {
+        toolTipHandler = ToolTipHandler(toolTips: [
+            ToolTipView(
+                overView: repeatView,
+                text: "repeat_tooltip".localized
+            ),
+            ToolTipView(
+                overView: weightView,
+                text: "weight_tooltip".localized
+            ),
+            ToolTipView(
+                overView: infoView,
+                text: NSAttributedString(string: "something".localized)
+            )
+        ])
+        toolTipHandler?.present()
+    }
+}
 ```
 
 #### Customization
