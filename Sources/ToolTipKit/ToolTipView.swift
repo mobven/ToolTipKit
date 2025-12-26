@@ -11,7 +11,7 @@ import UIKit
 /// ToolTipView to display tips on top view.
 public final class ToolTipView: UIView, ToolTipProtocol {
     /// Delegates `ToolTipKit` tip changes.
-    public var delegate: ToolTipGestureDelegate?
+    public weak var delegate: ToolTipGestureDelegate?
     public var overView: UIView
     public var text: NSAttributedString
     private var toolTipDirection: ToolTipDirection = .up(.zero)
